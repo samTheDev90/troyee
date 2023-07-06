@@ -11,3 +11,10 @@ function troyee(){
   }
   else{alert('You Do not have access')}
 };
+const buttonElement = document.querySelector('.js-enter-btn');
+buttonElement.addEventListener('click', troyee);
+document.body.addEventListener('keydown',(event)=>{
+  if(event.key === 'Enter'){
+    troyee();
+  }
+})
