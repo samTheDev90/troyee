@@ -1,0 +1,245 @@
+.inputbox {
+  position: relative;
+  width: 196px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: #45f3ff;
+  -webkit-transform: translateX(-10px) translateY(-34px);
+      -ms-transform: translateX(-10px) translateY(-34px);
+          transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+.entire-page{
+  position: relative;
+  visibility: hidden;
+}
+.input-name{
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+@media only screen and (max-width:768px){
+  .input-name{
+    left: 35%;
+  }
+}
+
+/* button part */
+button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 10px;
+  outline-offset: 4px;
+  -webkit-transition: -webkit-filter 250ms;
+  transition: -webkit-filter 250ms;
+  transition: filter 250ms;
+  transition: filter 250ms, -webkit-filter 250ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1), -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: -webkit-gradient(
+     linear,
+     right top, left top,
+     from(hsl(340deg 100% 16%)),
+     color-stop(8%, hsl(340deg 100% 32%)),
+     color-stop(92%, hsl(340deg 100% 32%)),
+     to(hsl(340deg 100% 16%))
+   );
+  background: linear-gradient(
+     to left,
+     hsl(340deg 100% 16%) 0%,
+     hsl(340deg 100% 32%) 8%,
+     hsl(340deg 100% 32%) 92%,
+     hsl(340deg 100% 16%) 100%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1), -webkit-transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+ }
+ 
+ button:hover .front {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .front {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
+ 
+ button:hover .shadow {
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .shadow {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-transition: -webkit-transform 34ms;
+  transition: -webkit-transform 34ms;
+  transition: transform 34ms;
+  transition: transform 34ms, -webkit-transform 34ms;
+ }
+ 
+ button:focus:not(:focus-visible) {
+  outline: none;
+ }

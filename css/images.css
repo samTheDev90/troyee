@@ -1,0 +1,11 @@
+.featurette-image{
+  width: 500px;
+  height: 500px;
+}
+
+@media only screen and (max-width:768px){
+  .featurette-image{
+    height:400px;
+    width: 400px;
+  }
+}
