@@ -5,8 +5,8 @@ const loginPage = document.querySelector('.js-login-page');
 
 function troyee(){
   if (input.value === 'troyee'|| input.value === 'TROYEE' || input.value ===  'Troyee'){
-    entirePage.style.visibility="visible";
-    loginPage.style.visibility="hidden";
+    entirePage.style.display="block";
+    loginPage.style.display="none";
    
   }
   else{alert('You Do not have access')}

@@ -61,7 +61,7 @@
 }
 .entire-page{
   position: relative;
-  visibility: hidden;
+  display: none;
 }
 .input-name{
   position: absolute;
