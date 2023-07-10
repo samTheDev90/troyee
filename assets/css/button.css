@@ -16,6 +16,8 @@ button {
   border-radius: 6px;
   font-weight: 500;
   color: var(--color);
+  padding: 0px 20px;
+  
  }
  
  button:before {
