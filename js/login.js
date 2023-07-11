@@ -2,11 +2,16 @@
 const entirePage = document.querySelector('.entire-page') ;
 const input = document.querySelector('.js-main-input');
 const loginPage = document.querySelector('.js-login-page');
-
+const happyBirtdayPage = document.querySelector('.birthday-card');
+const birthdayDisplay = happyBirtdayPage.style;
 function troyee(){
-  if (input.value === 'troyee'|| input.value === 'TROYEE' || input.value ===  'Troyee'){
-    entirePage.style.display="block";
+  if (input.value === 'troyee'|| input.value === 'TROYEE' || input.value ===  'Troyee' ||input.value ===  'Troyee'+' '){
+   birthdayDisplay.display="block";
     loginPage.style.display="none";
+    setTimeout(function(){
+      entirePage.style.display="block";
+      birthdayDisplay.display="none";
+    },3000);
    
   }
   else{alert('You Do not have access')}
@@ -17,4 +22,7 @@ document.body.addEventListener('keydown',(event)=>{
   if(event.key === 'Enter'){
     troyee();
   }
-})
+});
+
+
+
