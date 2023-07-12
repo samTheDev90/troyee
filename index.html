@@ -62,14 +62,15 @@
     <link rel="stylesheet" href="assets\css\happy-birthday.css">
     <style>
     body{
-      background-color: #111827;
-      /* background-image: linear-gradient(to left, #DE0A4A, #890067); */
+      top: 0%;
+      
+      background-image: linear-gradient(to left, #f3a1b9, #ff0ec3);
       background-size: cover;
       background-position: 100%;
     }
     @media only screen and (max-width:768px){
       body{
-      background-color: #111827;
+      
       /* background-image: linear-gradient(to left, #DE0A4A, #890067); */
       background-size: cover;
       background-position: 100%
@@ -106,7 +107,20 @@ transition: 1s;
    
   }
 }
-
+.hbml{
+  font-family: arial;
+ align-items: center;
+  color: rgb(244, 224, 224);
+  font-size: 25px;
+  height: 15px;
+justify-content: center;
+width: 100%;
+height: auto;
+margin-left: 40px;
+font-weight: 800;
+margin-top: 10px;
+margin-bottom: 0px;
+}
 
 /* cards */
 
@@ -221,7 +235,7 @@ transition: 1s;
 </div>
 
 
-    <div class="entire-page">
+    <div class="entire-page" style="top:0; margin-top: 0;">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -240,17 +254,15 @@ transition: 1s;
 
    
     
-<div class="h1-bday">
-<h1 class="bday">Happy Birthday my Love</h1>
-</div>
+
 <main  class="main" style="margin-top: 0;">
-  
-  <section class="ftco-section">
+  <div class="hbml">Happy Birthday my Love</div>
+  <section class="ftco-section" >
     <div class="container">
       <div class="row">
         
         <div class="col-md-12">
-          <div class="hero featured-carousel owl-carousel">
+          <div class="hero featured-carousel owl-carousel" >
             <div class="item">
               <div class="work">
                 <div class="img d-flex align-items-center justify-content-center" style="background-image: url(IMG-20220707-WA0010.jpg);"><span style="font-size: 20px;text-align: center;color: white;">Hello Word</span>
@@ -367,7 +379,7 @@ transition: 1s;
       <i></i>
   </div>
 </div><button class="js-enter-btn" style="margin-top: 20px;">
-  <span class="shadow"></span>
+  
   <span class="edge"></span>
   <span class="front text"> Click me
   </span>
