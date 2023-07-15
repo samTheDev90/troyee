@@ -5,7 +5,7 @@ const loginPage = document.querySelector('.js-login-page');
 const happyBirtdayPage = document.querySelector('.birthday-card');
 const birthdayDisplay = happyBirtdayPage.style;
 function troyee(){
-  if (input.value === 'troyee'|| input.value === 'TROYEE' || input.value ===  'Troyee' ||input.value ===  'Troyee'+' '){
+  if (input.value === 'troyee'|| input.value === 'TROYEE' || input.value ===  'Troyee' ||input.value ===  'Troyee'+' ' ||input.value ===  'Toyee'+' ' ||input.value ===  'Toyee'||input.value ===  'toyee'||input.value ===  'TOYEE'){
    birthdayDisplay.display="block";
     loginPage.style.display="none";
     setTimeout(function(){
