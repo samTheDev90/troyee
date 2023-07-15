@@ -59,8 +59,10 @@
     <link rel="stylesheet" href="carousel/css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 		<link rel="stylesheet" href="carousel/css/style.css">
+    <link rel="stylesheet" href="css\lightbox.css">
 <!-- ================================================================ -->
     <link rel="stylesheet" href="assets\css\happy-birthday.css">
+    <link rel="stylesheet" href="css\card.css">
     <style>
     body{
       top: 0%;
@@ -125,7 +127,7 @@ transition: 1s;
 
 /* cards */
 
-.card {
+/* .card {
   left: 20%;
   max-width: 500px;
   border-radius: 0.5rem;
@@ -199,7 +201,7 @@ transition: 1s;
 
 .action:hover .span-card2 {
   transform: translateX(4px);
-}
+} */
 
     </style>
     <link rel="stylesheet" href="css/carousel.rtl.css">
@@ -319,7 +321,7 @@ transition: 1s;
         </p>
       </div>
       <div class="col-md-5" data-aos="fade-left">
-        <img src="index-img/pic1.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></div>
+        <a href="index-img/pic1.jpg" data-lightbox="Troyee" data-title="my love"><img src="index-img/pic1.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></a></div>
       
     </div>
 
@@ -333,7 +335,8 @@ transition: 1s;
           With you, my love, life's victories begin.<span style="font-size: 30px; color:#f826d9;">Happy birthday, my joyous Melody.</span> &#128158.</p>
       </div></div>
       <div class="col-md-5 order-md-1" >
-        <img src="index-img/pic2.jpg" class="border rounded mx-auto d-block featurette-image"  style="width: 350px; height: 500px;">
+        <a href="index-img/pic2.jpg" data-lightbox="Troyee" data-title="my joyous Melody">
+        <img src="index-img/pic2.jpg" class="border rounded mx-auto d-block featurette-image"  style="width: 350px; height: 500px;"></a>
       </div>
     </div>
 
@@ -347,7 +350,9 @@ transition: 1s;
           <span style="font-size: 30px; color: #fabec0;">Happy birthday, my blooming beauty</span> &#128152 .</p>
       </div>
       <div class="col-md-5">
+        <a href="index-img/pic3.jpg" data-lightbox="Troyee" data-title="my blooming beauty">
         <img src="index-img/pic3.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        </a>
       </div>
     </div>
 <!-- =========================================== -->
@@ -362,7 +367,10 @@ transition: 1s;
         </p>
       </div>
       <div class="col-md-5" data-aos="fade-left">
-        <img src="index-img/pic4.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></div>
+        <a href="index-img/pic4.jpg" data-lightbox="Troyee" data-title="my celestial love">
+        <img src="index-img/pic4.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        </a>
+      </div>
       
     </div>
 
@@ -376,7 +384,9 @@ transition: 1s;
           <span style="font-size: 30px; color: #15f782;">Happy birthday, my love's delight.</span> &#128152 .</p>
       </div>
       <div class="col-md-5">
+        <a href="index-img/pic7.jpg" data-lightbox="Troyee" data-title="my love's delight">
         <img src="index-img/pic7.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        </a>
       </div>
     </div>
     <hr class="featurette-divider">
@@ -390,8 +400,9 @@ transition: 1s;
           <span style="font-size: 30px; color: #f2c5e0;">Happy birthday, my gentle soul so free.</span> &#128152 .</p>
       </div></div>
       <div class="col-md-5 order-md-1" >
+        <a href="onlyTroyee\ont5.jpg" data-lightbox="Troyee" data-title="my gentle soul">
         <img src="onlyTroyee\ont5.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;" >
-      </div>
+        </a></div>
     </div>
     <hr class="featurette-divider">
 
@@ -402,7 +413,8 @@ transition: 1s;
           <span style="font-size: 30px; color: #feb326;">Happy birthday, my soft and kind wings.</span> &#128152 .</p>
       </div>
       <div class="col-md-5">
-        <img src="index-img/pic6.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        <a href="index-img/pic6.jpg" data-lightbox="Troyee" data-title="my soft and kind wings">
+        <img src="index-img/pic6.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></a>
       </div>
     </div>
 
@@ -411,7 +423,7 @@ transition: 1s;
     <!-- /END THE FEATURETTES -->
     <!-- ================================================================ -->
 <!-- cards -->
-<div class="card">
+<!-- <div class="card">
   <div class="image-card"> <img class="card-image" src="card-image.png" ></div>
    <div class="content-card">
    
@@ -434,9 +446,17 @@ transition: 1s;
        </span>
      </a>
    </div>
- </div>
+ </div> -->
 <!-- ================================================================ -->
-
+<div class="card">
+  <div class="card-imgbox">
+      <div class="card-img"><img class="card-image" src="card-image.png" height="100%" width="100%"></div>
+  </div>
+  <div class="card-details">
+      <h2 class="card-title">Memories</h2>
+      <span class="card-caption"><button id="card-button">click to explore</button></span>
+  </div>
+</div>
   </div><!-- /.container -->
 
   
@@ -474,6 +494,7 @@ transition: 1s;
 <script src="carousel/js/main.js"></script>
 <script src="vendor/animsition/js/animsition.js"></script>
 <script src="vendor/animsition/js/animsition.min.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 <!-- ================================================================== -->
 <script>const observer = new IntersectionObserver(entries => {
   // Loop over the entries
