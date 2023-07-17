@@ -163,10 +163,23 @@
     </svg>
 
    
+<main  class="main" >
+  <div class=""><p class="hbml  focus-in-expand-fwd"><span style="color: #ff662a;">Happy </span><span  style="color:#ffa22a;">Birthday</span><span style="color: #82ac26;"> To You</span> <span style="color:#4f3f84">my </span><span style="color: #C83B55">Love</span></p></div>
+    <div class="btn-container">
+      <button type="submit" class="popup-btn" id="popup-btn" onclick="openpopup()">Click Me</button>
+      <div class="bday-popup" id="bday-popup">
+        <div class="book">
+          <p>Hello Love I created this website for you.
+            carefully explore everything I implanted
+          </p><button onclick="closePopup()">close</button>
+          <div class="cover">
+              <p>Click me</p>
+          </div>
+         </div>
+      </div>
+    </div>
     
 
-<main  class="main" style="margin-top: 0;">
-  <div class=""><p class="hbml  focus-in-expand-fwd"><span style="color: #ff662a;">Happy </span><span  style="color:#ffa22a;">Birthday</span><span style="color: #82ac26;"> To You</span> <span style="color:#4f3f84">my </span><span style="color: #C83B55">Love</span></p></div>
   <section class="ftco-section" >
     <div class="container">
       <div class="row">
@@ -220,7 +233,7 @@
     <hr class="featurette-divider">
 
     <div class="row featurette" >
-      <div class="col-md-7"  data-aos="fade-right" >
+      <div class="col-md-7"  data-aos="fade-right" data-aos-offset="250">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color: #8fd3e8;" >In a universe of infinite possibilities, <span style="color: #0ff796;">You're the one who brings me serenity.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #f75008;">On your birthday, my heart sings and smiles, <span style="font-size: 30px; color:#12fe84;">Happy birthday, my love, forever in your style.</span>
          &#128150&#128150&#128150&#128150 
@@ -394,6 +407,21 @@
 <script src="js/lightbox-plus-jquery.js"></script>
 
 <!-- ================================================================== -->
+<script>
+  // popup
+  let btnContainer = document.querySelector('.btn-container');
+let popup = document.getElementById('bday-popup');
+let popupButton = document.getElementById('popup-btn')
+function openpopup (){
+  btnContainer.style.height="100vh";
+  popup.classList.add('bday-popup-active');
+popupButton.style.display="none";
 
+}
+function closePopup(){
+  btnContainer.style.display="none";
+ 
+}
+</script>
     </body>
 </html>
