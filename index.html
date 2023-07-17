@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Samaun hossain">
     <meta name="generator" content="Hugo 0.112.5">
     <title>Shhhh!!!</title>
-
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
     
@@ -28,12 +29,12 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"> -->
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.css">
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.css"> -->
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->	
@@ -63,6 +64,10 @@
 <!-- ================================================================ -->
     <link rel="stylesheet" href="assets\css\happy-birthday.css">
     <link rel="stylesheet" href="css\card.css">
+    <link rel="stylesheet" href="css\animation.css">
+    
+  
+
     <style>
     body{
       top: 0%;
@@ -83,33 +88,7 @@
   margin: 0;
 }
 
-.image{
-transition: 1s;
-}
 
-@keyframes enter-animation {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-@media (prefers-reduced-motion: no-preference) {.image-animation {
-    animation: enter-animation 2s 1;
-   
-  }
-}
-@media only screen and (max-width:768px) {
-  .image-animation {
-    animation: enter-animation 2s 1;
-   
-  }
-}
 .hbml{
   font-family: arial;
   align-items: center;
@@ -131,9 +110,10 @@ transition: 1s;
 
     </style>
     <link rel="stylesheet" href="css/carousel.rtl.css">
+    
   </head>
   <body>
- 
+
  <div class="birthday-card " style="top:20%; left:10%">
   <div class="bday-card" >
     <div class="cake">
@@ -186,7 +166,7 @@ transition: 1s;
     
 
 <main  class="main" style="margin-top: 0;">
-  <div class=""><p class="hbml fade-in-down-lg"><span style="color: #ff662a;">Happy </span><span  style="color:#ffa22a;">Birthday</span><span style="color: #82ac26;"> To You</span> <span style="color:#4f3f84">my </span><span style="color: #C83B55">Love</span></p></div>
+  <div class=""><p class="hbml  focus-in-expand-fwd"><span style="color: #ff662a;">Happy </span><span  style="color:#ffa22a;">Birthday</span><span style="color: #82ac26;"> To You</span> <span style="color:#4f3f84">my </span><span style="color: #C83B55">Love</span></p></div>
   <section class="ftco-section" >
     <div class="container">
       <div class="row">
@@ -239,45 +219,46 @@ transition: 1s;
 
     <hr class="featurette-divider">
 
-    <div class="row featurette image " >
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color: #8fd3e8;">In a universe of infinite possibilities, <span style="color: #0ff796;">You're the one who brings me serenity.</span></h2>
+    <div class="row featurette" >
+      <div class="col-md-7"  data-aos="fade-right" >
+        <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color: #8fd3e8;" >In a universe of infinite possibilities, <span style="color: #0ff796;">You're the one who brings me serenity.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #f75008;">On your birthday, my heart sings and smiles, <span style="font-size: 30px; color:#12fe84;">Happy birthday, my love, forever in your style.</span>
          &#128150&#128150&#128150&#128150 
         </p>
       </div>
       <div class="col-md-5" data-aos="fade-left">
-        <a href="index-img/pic1.jpg" data-lightbox="Troyee" data-title="my love"><img src="index-img/pic1.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></a></div>
+        <a href="index-img/pic1.jpg"   data-lightbox="Troyee" data-title="my love"><img src="index-img/pic1.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px;"></a></div>
       
     </div>
+  
 
     <hr class="featurette-divider">
 
-    <div class="row featurette image">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette image"  >
+      <div class="col-md-7 order-md-2" data-aos="fade-right">
         <div style="margin-left: 45px;">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color: #90bfef;">In your laughter, I find melodies of joy,<span style="color: #8ee298">A dance of happiness no one can destroy.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #cb0eb2;"> Your touch, a gentle breeze on my skin,
           With you, my love, life's victories begin.<span style="font-size: 30px; color:#f826d9;">Happy birthday, my joyous Melody.</span> &#128158.</p>
       </div></div>
-      <div class="col-md-5 order-md-1" >
+      <div class="col-md-5 order-md-1"  data-aos="fade-left">
         <a href="index-img/pic2.jpg" data-lightbox="Troyee" data-title="my joyous Melody">
-        <img src="index-img/pic2.jpg" class="border rounded mx-auto d-block featurette-image"  style="width: 350px; height: 500px;"></a>
+        <img src="index-img/pic2.jpg" class="border rounded mx-auto d-block featurette-image"  style="width: 350px; height: 450px;"></a>
       </div>
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette image">
-      <div class="col-md-7">
+      <div class="col-md-7" data-aos="fade-right">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color: #e43d40;">Like a rose, you bloom with grace,<span style="color: #f37970;">Spreading love's fragrance in every embrace.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px;color: #f85c70;">With each smile, my heart takes flight,
           Forever grateful you're my shining light.
           <span style="font-size: 30px; color: #fabec0;">Happy birthday, my blooming beauty</span> &#128152 .</p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5" data-aos="fade-left">
         <a href="index-img/pic3.jpg" data-lightbox="Troyee" data-title="my blooming beauty">
-        <img src="index-img/pic3.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        <img src="index-img/pic3.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px;">
         </a>
       </div>
     </div>
@@ -286,15 +267,15 @@ transition: 1s;
 
 
     <div class="row featurette image " >
-      <div class="col-md-7">
+      <div class="col-md-7" data-aos="fade-right">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px;color: #936f5d;">In your eyes,galaxies dance, <span style="color:#e1c391;">and your smile paints the sunsets.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px;color: #fdf4e3;"> <span style="font-size: 30px; ">Happy birthday, my celestial love</span>.
          <span style="font-size: 30px; color: #ae4d2a;"> A universe of joy you rise above.</span> &#128150&#128150&#128150&#128150 
         </p>
       </div>
-      <div class="col-md-5" data-aos="fade-left">
+      <div class="col-md-5"  data-aos="fade-left">
         <a href="index-img/pic4.jpg" data-lightbox="Troyee" data-title="my celestial love">
-        <img src="index-img/pic4.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        <img src="index-img/pic4.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px;">
         </a>
       </div>
       
@@ -304,14 +285,14 @@ transition: 1s;
 
 
     <div class="row featurette image">
-      <div class="col-md-7">
+      <div class="col-md-7"  data-aos="fade-right">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px; color:#059dc0">Your beauty, like the ocean's endless expanse, <span style="color:#6af2f0;">Waves that crash with power and might.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #04d4f0">In your presence, love takes its chance,
           <span style="font-size: 30px; color: #15f782;">Happy birthday, my love's delight.</span> &#128152 .</p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5"  data-aos="fade-left">
         <a href="index-img/pic7.jpg" data-lightbox="Troyee" data-title="my love's delight">
-        <img src="index-img/pic7.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;">
+        <img src="index-img/pic7.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px">
         </a>
       </div>
     </div>
@@ -319,28 +300,28 @@ transition: 1s;
 
 
     <div class="row featurette image">
-      <div class="col-md-7 order-md-2">
+      <div class="col-md-7 order-md-2" data-aos="fade-right">
         <div style="margin-left: 45px;">
         <h2 class="featurette-heading fw-normal lh-1 " style="color: #a47a65;" >In your innocence, a strength resides,  <span class="text-body-secondary" style="color:  #EC8fd0;">A purity that the world can't divide.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #d43790">Your smile, a beacon of joy and glee,
           <span style="font-size: 30px; color: #f2c5e0;">Happy birthday, my gentle soul so free.</span> &#128152 .</p>
       </div></div>
-      <div class="col-md-5 order-md-1" >
+      <div class="col-md-5 order-md-1"  data-aos="fade-left">
         <a href="onlyTroyee\ont5.jpg" data-lightbox="Troyee" data-title="my gentle soul">
-        <img src="onlyTroyee\ont5.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;" >
+        <img src="onlyTroyee\ont5.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px" >
         </a></div>
     </div>
     <hr class="featurette-divider">
 
     <div class="row featurette image">
-      <div class="col-md-7">
+      <div class="col-md-7"  data-aos="fade-right">
         <h2 class="featurette-heading fw-normal lh-1" style="font-size: 40px;color: #7f58af;">Like a butterfly's wings, your spirit dances,<span style="color:#64c5eb;">Spreading joy and kindness in all chances.</span></h2>
         <p class="lead" style="font-weight: 400;font-size: 25px; color: #e84d8a;">Your love, a melody that soothes and sings,
           <span style="font-size: 30px; color: #feb326;">Happy birthday, my soft and kind wings.</span> &#128152 .</p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5"  data-aos="fade-left">
         <a href="index-img/pic6.jpg" data-lightbox="Troyee" data-title="my soft and kind wings">
-        <img src="index-img/pic6.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 500px;"></a>
+        <img src="index-img/pic6.jpg" class="border rounded mx-auto d-block featurette-image" style="width: 350px; height: 450px"></a>
       </div>
     </div>
 
@@ -382,7 +363,17 @@ transition: 1s;
   </span>
 </button>
 </div>
-<script src="../assets/js/color-modes.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+  
+</script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000,
+    disable: false,
+  });
+</script>
+<!-- <script src="../assets/js/color-modes.js"></script> -->
 
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -394,31 +385,15 @@ transition: 1s;
 <script src="js/login.js"></script>
 <!-- carousel-script ===================================================-->
 <script src="carousel/js/jquery.min.js"></script>
-<script src="carousel/js/popper.js"></script>
+<!-- <script src="carousel/js/popper.js"></script> -->
 <script src="carousel/js/bootstrap.min.js"></script>
 <script src="carousel/js/owl.carousel.min.js"></script>
 <script src="carousel/js/main.js"></script>
-<script src="vendor/animsition/js/animsition.js"></script>
-<script src="vendor/animsition/js/animsition.min.js"></script>
+
+
 <script src="js/lightbox-plus-jquery.js"></script>
+
 <!-- ================================================================== -->
-<script>const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add('image-animation');
-    }
-  });
-});
 
-const viewbox = document.querySelectorAll('.image');
-viewbox.forEach(image => {
-  observer.observe(image);
-});
-
-
-</script>
     </body>
 </html>
