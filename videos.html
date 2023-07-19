@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/button.css">
+  <Style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+body{
+  background-color: #334;
+}
+.container{
+  position: relative;
+
+  min-height: 100vh;
+  
+}
+.container h1{
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: normal;
+}
+.container .video-container{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.container .video-container .video{
+  height: 250px;
+  width: 250px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  cursor: pointer;
+  overflow: hidden;
+}
+.container .video-container .video video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.container .video-container .video:hover video{
+transform: scale(1.1);
+}
+.container .popup-video{
+  position: fixed;
+  top: 0;left:0;
+  z-index: 100;
+  background: rgba(0,0,0,0.8);
+  height: 100%;
+  width: 100%;
+  transition: ease-in 2s;
+  display: none;
+
+}
+.container .popup-video video{
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 750px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.container .popup-video span{
+  position: absolute;
+  top: 5px; right: 20px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bolder;
+  z-index: 1000;
+  cursor: pointer;
+}
+@media (max-width:768px){
+  .container .popup-video video{
+    width: 95%;
+    height: 80%;
+  }
+  .container .popup-video video{
+    object-fit: scale-down;
+  }
+}
+  </Style>
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="inner">
+      <div class="content">
+        <h1>Troyee</h1>
+        <h2>Welcome to Videos page<br />
+        Of this website.</h2>
+        <a href="" class="button big alt"><span>Click To Explore</span></a>
+      </div>
+      <a href="" class="button hidden"><span>Let's Go</span></a>
+    </div>
+  </header>
+  <!-- main -->
+  <div class="container">
+<h1>Videos We made for each other</h1>
+<div class="video-container">
+  <div class="video"><video src="videos/vid14.mp4"></video></div>
+  <div class="video"><video src="videos/vid11.mp4"></video></div>
+  <div class="video"><video src="videos/vid10.mp4"></video></div>
+  <div class="video"><video src="videos/vid4.mp4"></video></div>
+  <div class="video"><video src="videos/vid13.mp4"></video></div>
+  
+  <div class="video"><video src="videos/vid15.mp4"></video></div>
+  <div class="video"><video src="videos/vid8.mp4"></video></div>
+  <div class="video"><video src="videos/vid16.mp4"></video></div>
+  <div class="video"><video src="videos/vid3.mp4"></video></div>
+  
+  <div class="video"><video src="videos/vid12.mp4"></video></div>
+  <div class="video"><video src="videos/vid5.mp4"></video></div>
+  
+  <div class="video"><video src="videos/vid7.mp4"></video></div>
+  <div class="video"><video src="videos/vid9.mp4"></video></div>
+  <div class="video"><video src="videos/vid17.mp4"></video></div>
+
+</div>
+<div class="popup-video">
+  <span>&times</span>
+  <video src="" autoplay controls></video>
+</div>
+  </div>
+
+
+<!-- footer -->
+  <footer id="footer">
+    <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+    <div class="inner">
+      <div class="content">
+        <h3>Click to return Previous Page</h3>
+      <a href="second-page.html"><button> Previous
+      </button></a>
+      </div>
+    
+  </footer>
+  <!-- script -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>const popup = document.querySelector('.popup-video');
+    document.querySelectorAll('.video-container video').forEach(vid=>{
+      vid.onclick=()=>{
+        document.querySelector('.container').appendChild(popup) ;
+       popup.style.display='block';
+        document.querySelector('.popup-video video').src = vid.getAttribute('src');
+        
+      }
+    });
+    document.querySelector('.popup-video span' ).onclick = ()=>{
+      popup.parentNode.removeChild(popup);
+
+      // document.querySelector('.popup-video').style.display='none';
+      
+    };</script>
+</body>
+</html>
