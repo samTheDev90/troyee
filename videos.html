@@ -160,7 +160,9 @@ transform: scale(1.1);
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>const popup = document.querySelector('.popup-video');
+  <script>
+  setTimeout(()=>{alert('click to get full screen')}, 3000);
+  const popup = document.querySelector('.popup-video');
     document.querySelectorAll('.video-container video').forEach(vid=>{
       vid.onclick=()=>{
         document.querySelector('.container').appendChild(popup) ;
